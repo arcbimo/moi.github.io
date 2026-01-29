@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon CV</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+  <style>
+    h1 {
+      text-shadow: 2px 2px 4px #c048de;
+      padding: 15px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #f0c040;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0c040;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    #copyright {
+      font-style: italic;
+      color: #f0c040;
+    }
+    .qrcode {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 100px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #f0c040;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 2px 2px 5px #333;
+    }
+    .btn:hover {
+      background-color: #d4a020;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="text-align:center;">
+      <img src="mm.png" alt="Ma photo" width="150" style="border-radius:50%; box-shadow:2px 2px 6px #333;">
+      <h1>CV professionnel</h1>
+    </div>
+    <img src="qrcode.png" alt="QR Code vers Github" class="qrcode">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#diplomes">Diplômes</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#tableau">Tableau</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#infos">Infos</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="diplomes">
+      <h2>Mes Diplômes</h2>
+      <p>Bac sc. math (2023) <br> diplome ingenieur d'etat(2028)</p>
+    </section>
+
+    <section id="projets">
+      <h2>Mes Projets</h2>
+      <article>
+        <p>Projet 1 : jeux en C<br>Projet 2 : Site web <br>Projet 3 : Application mobile <br>Projet 4 : Application web</p>
+      </article>
+    </section>
+
+    <section id="tableau">
+      <h2>Tableau de progression</h2>
+      <table>
+        <tr>
+          <th>Année</th>
+          <th>Projet</th>
+          <th>Technologie</th>
+          <th>Durée</th>
+          <th>Statut</th>
+        </tr>
+        <tr>
+          <td>2025</td>
+          <td>Site Web</td>
+          <td>HTML/CSS/JS</td>
+          <td>3 mois</td>
+          <td>Terminé</td>
+        </tr>
+        <tr>
+          <td>2026</td>
+          <td>Application Mobile</td>
+          <td>Flutter</td>
+          <td>6 mois</td>
+          <td>En cours</td>
+        </tr>
+      </table>
+    </section>
+
+    
+
+    <section id="infos">
+      <h2>Informations supplémentaires</h2>
+      <p>pour plus d'informations, contactez-moi via les coordonnées ci-dessus.</p>
+    </section>
+
+    <aside id="contact">
+      <h2>Contact</h2>
+        <p>Email : elhamdaoui4446@gmail.com</p>
+        <p>Téléphone : +212 6 12 34 56 78</p>
+        <p>Adresse : Casablanca, Maroc</p>
+        <p>mobile : +212 5 15 60 00 12</p>
+    </aside>
+    <button class="btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆ Haut de page</button>
+    <button class="btn" onclick="window.location.href='mailto:elhamdaoui4446@gmail.com';">✉ Envoyer un mail</button>
+  </main>
+
+
+  <footer>
+    <p id="copyright">© Medo</p>
+    <pre>
+ __  __          _       
+|  \/  |   ___  | |  
+| |\/| |  / _ \ | | 
+| |  | | |  __/ | | 
+|_|  |_|  \___| |_| 
+    </pre>
+  </footer>
+
+</body>
+</html>
